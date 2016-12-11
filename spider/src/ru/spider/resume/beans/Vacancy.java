@@ -1,4 +1,4 @@
-package ru.spider.resume.vo;
+package ru.spider.resume.beans;
 
 public class Vacancy {
 

@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="spider:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/spider_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="spider/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="spider" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jsoup-1.9.2-javadoc" />
+          <element id="library" level="project" name="junit-4.12-javadoc" />
+          <element id="library" level="project" name="Mojarra-2.2.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

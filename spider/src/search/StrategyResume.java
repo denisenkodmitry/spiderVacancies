@@ -1,4 +1,4 @@
-package ru.spider.resume.model;
+package search;
 
 import ru.spider.resume.beans.Resume;
 

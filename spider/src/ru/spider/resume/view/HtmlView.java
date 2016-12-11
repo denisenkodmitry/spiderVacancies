@@ -4,8 +4,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import ru.spider.resume.Controller;
-import ru.spider.resume.vo.Resume;
-import ru.spider.resume.vo.Vacancy;
+import ru.spider.resume.beans.Resume;
+import ru.spider.resume.beans.Vacancy;
 
 import java.io.BufferedWriter;
 import java.io.File;

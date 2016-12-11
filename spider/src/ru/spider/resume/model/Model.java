@@ -2,8 +2,8 @@ package ru.spider.resume.model;
 
 
 import ru.spider.resume.view.View;
-import ru.spider.resume.vo.Resume;
-import ru.spider.resume.vo.Vacancy;
+import ru.spider.resume.beans.Resume;
+import ru.spider.resume.beans.Vacancy;
 
 import java.util.ArrayList;
 import java.util.List;

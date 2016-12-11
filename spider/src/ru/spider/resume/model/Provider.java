@@ -1,8 +1,8 @@
 package ru.spider.resume.model;
 
 import ru.spider.resume.model.vacancy.StrategyVacancy;
-import ru.spider.resume.vo.Resume;
-import ru.spider.resume.vo.Vacancy;
+import ru.spider.resume.beans.Resume;
+import ru.spider.resume.beans.Vacancy;
 
 import java.util.List;
 

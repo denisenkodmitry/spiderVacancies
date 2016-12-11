@@ -1,4 +1,4 @@
-package ru.spider.resume.model;
+package search;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ResumeStrategy implements StrategyResume {
+public class SuperJob implements StrategyResume {
     private static final String URL_FORMAT = "https://www.superjob.ru/resume/search_resume.html" +
             "?sbmit=1&keywords[0][keys]=%s&catalogues[0]=33&page=%s";
     private static final String userAgent = "Chrome/49.0.2623.87";
