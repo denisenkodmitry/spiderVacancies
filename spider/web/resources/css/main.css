@@ -1,0 +1,14 @@
+#loading_wrapper{
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    display: none;
+    overflow: hidden;
+}
+
+#loading_wrapper p{
+    background-color: #fde88e;
+    height: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}

@@ -9,12 +9,19 @@ import ru.spider.resume.beans.Resume;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 
-public class SuperJob implements StrategyResume {
+public class SuperJob implements StrategyResume, Callable {
     private static final String URL_FORMAT = "https://www.superjob.ru/resume/search_resume.html" +
             "?sbmit=1&keywords[0][keys]=%s&catalogues[0]=33&page=%s";
     private static final String userAgent = "Chrome/49.0.2623.87";
     private static final int timeout = 60 * 1000;
+
+    private String stringSearch;
+
+    public SuperJob(String stringSearch) {
+        this.stringSearch = stringSearch;
+    }
 
     @Override
     public List<Resume> getResumes(String searchString) {
@@ -60,5 +67,10 @@ public class SuperJob implements StrategyResume {
             e.printStackTrace();
         }
         return resumes;
+    }
+
+    @Override
+    public List<Resume> call() throws Exception {
+        return getResumes(stringSearch);
     }
 }
